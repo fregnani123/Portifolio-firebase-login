@@ -1,0 +1,135 @@
+:root {
+    --cor1: rgba(6, 38, 38);
+    --cor2: rgb(218, 218, 218);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   }
+
+body{
+    background-color: var(--cor2);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    }
+
+.title { 
+    text-align: right;
+    margin-bottom: 30px;
+    
+}
+.title2 { 
+    text-align:left;
+    margin-bottom: 30px;
+    }
+    .title-media { display: none;}
+
+.input-group {
+    color: rgb(6, 38, 38);;
+    height: 600px;
+    max-width: 300px;
+    width: 100%;
+    background-color: var(--cor2);
+    padding-top: 25px ; padding-bottom: 25px;
+    padding-left: 30px; padding-right: 10px;
+    margin-top: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.input-group2 {
+    color:rgba(6, 38, 38);
+    height: 600px;
+    text-align: end;
+    max-width: 300px;
+    width: 100%;
+    background-color:var(--cor2);
+    padding-top: 25px ; padding-bottom: 25px;
+    padding-right: 30px;
+    margin-top: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px ; }
+
+.input-group-clone {display: none;}   
+    
+input {
+    padding: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+textarea:focus, input:focus {
+    outline: 0;
+}
+
+#ajuste {
+    text-align: end;
+}
+    #name { width: 100%;}
+    #cnpj { width: 100%;}
+    #endereco { width: 100%;}
+    #comercial {width: 100%}
+    #n {width: 30%;}
+    #observacoes {
+         width: 100%;    
+    }
+#e-mail { 
+        width: 100%;}
+#commercial{
+        width: 100%;
+    }
+#uf {width: 30%;}
+.logo {
+        border-radius: 25px;
+        margin-top: 100px;
+        margin-bottom: -40px;
+    }
+.enviar {
+    padding:7px 13px;
+    
+    border-radius: 5px;
+    color: var(--cor1);
+    margin-right: 5px;
+    
+} 
+.resetar {
+    padding: 7px;
+    border-radius: 5px;
+    color: rgb(255, 0, 0);
+}   
+
+   
+    @media (max-width: 500px){ 
+        body{display: block;}
+
+        .input-group {
+            height: 100vh;
+            margin: auto;
+            border-radius: 0px;
+        }
+        .input-group2 {
+            display: none;
+        }
+        .input-group-clone {
+            display: block;
+            margin-top: 5px;
+        }   
+       .e-mail{margin-bottom: 5px;}
+
+        .title, .title2 {display: none;}
+
+        .title-media { 
+            display: block;
+            margin-bottom: 30px;
+        }
+    .logo {
+        display: none;}
+    .img {
+        margin-bottom: -35px;
+    }
+    .footer{margin-top: 5px;}
+    }

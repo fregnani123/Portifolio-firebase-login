@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style-login.css">
+</head>
+
+<body>
+
+    <div id="conteiner">
+        <div class="content">
+            <h1>Login</h1>
+            <hr>
+            <p><label for="email_login">Seu e-mail</label>
+                <input id="email" type="email" placeholder="e-mail">
+            </p>
+            <p> <label for="nome_login">Sua senha</label>
+                <input id="senha" placeholder="1234" type="password">
+            </p>
+
+            <!--<p>
+                <input type="checkbox" id="manterlogado" value="" />
+                <label for="manterlogado">Manter-me logado</label>
+            </p> -->
+            <p>
+                <input id="entrar" type="submit" value="Entrar" onclick="login()">
+            </p>
+
+            <p id="registrar">Não possui uma conta? Inscreva-se</p>
+        </div>
+    </div>
+    </div>
+    <div id="conteiner2">
+        <div class="content">
+            <h1>Inscreva-se</h1>
+            <hr>
+            <p><label for="email_login">Cadastrar e-mail</label>
+                <input id="emailCadastrar" type="email" placeholder="e-mail">
+            </p>
+            <p> <label for="nome_login">Cadastar senha com mais de 6 digitos. </label>
+                <input id="senha2" placeholder="1234" type="password">
+            </p>
+            <!--<p>
+                <input type="checkbox" id="manterlogado" value="" />
+                <label for="manterlogado">Manter-me logado</label>
+            </p> -->
+            <p>
+                <input id="cadastro" type="submit" value="Cadastrar" onclick="cadastro()">
+            </p>
+            <p id="registrado">Já possui uma conta? fazer o login </p>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+
+    <script src="./firebaseconfig.js"></script>
+    <!--<script src="./login.js"></script>-->
+    <script src="./api.js"></script>
+
+
+
+</body>
+
+</html>
