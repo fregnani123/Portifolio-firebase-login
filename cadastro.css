@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --cor1: rgba(6, 38, 38);
+    --cor2: rgb(218, 218, 218);
+}
+body{
+    background-color: var(--cor2);
+}
+
+#header {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color:var(--cor2);
+    color: var(--cor1);
+}
+
+#conteiner {
+    margin: auto;
+    display: flex;
+    height: 100vh;
+    width: 600px;
+    max-width: 100%;
+    background-color: var(--cor2);
+}
+#quadrado1{
+    text-align: right;
+    height: 422px;
+    width: 300px;
+    background-color: var(--cor2);
+}
+
+#quadrado2 {
+    text-align: right;
+    height: 422px;
+    width: 300px;
+    background-color: var(--cor2);
+}
+input {
+    margin-top: 5px;
+    padding: 3px;
+}
+.input-box{
+    margin-top: 5px;
+}
+textarea:focus, input:focus {
+    outline: 0;
+}
+
+/*ajustes: tamanho dos inputs*/
+
+#email{ width: 90%;}
+#name{ width: 90%;}
+#n {width: 20%;}
+#obs {width: 90%;}
+#cpf {width: 90%;}
+#comercial{width: 90%;}
+#endereco{width: 90%;}
+#uf {width: 20%;}
+
+@media (max-width: 500px){
+    body{
+        display: block;}
+    
+    #header{
+        width: 300px;
+        text-align: center;}
+
+    #conteiner {
+        display: block;  
+    }
+    #quadrado1 {
+        margin:auto;
+        padding-bottom: -5px;
+       
+    }
+    #quadrado2 {
+        margin: auto;
+    }
+    
+}

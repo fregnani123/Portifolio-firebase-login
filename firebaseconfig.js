@@ -33,7 +33,6 @@ auth.signInWithEmailAndPassword(email.value, password.value)
         
   });
 }
- 
   document.querySelector('#registrar').addEventListener('click', function(){
     document.querySelector('#conteiner').style.display='none'
     document.querySelector('#conteiner2').style.display='flex'
