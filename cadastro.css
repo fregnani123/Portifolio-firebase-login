@@ -69,6 +69,7 @@ textarea:focus, select:focus {
 #endereco{width: 90%;}
 #uf {width: 20%; padding: 3px;}
 #cidade {width: 50%; padding: 3px;}
+.cidade{ width: 20%;}
 textarea{margin-top:5px;}
 
 @media (max-width: 500px){
