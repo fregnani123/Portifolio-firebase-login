@@ -13,7 +13,7 @@
 <body>
 
     <div id="header">
-        <h1>Cadastrar Cliente 
+        <h1>Cadastrar Cliente
             <hr>
         </h1>
     </div>
@@ -37,7 +37,7 @@
             </div>
 
             <div class="input-box">
-                <label for="endereco" type="text">Endereço do estabelecimento:</label><input id="endereco" type="text"
+                <label for="endereco" type="text">Endereço do estabelecimento:</label><input id="endereco"  type="text"
                     name="Endereço do estabelecimento" placeholder="" required>
             </div>
 
@@ -49,20 +49,20 @@
                 <label for="district">Bairro: </label><input id="district" type="text" name="district" placeholder=""
                     required>
             </div>
-      
-          <div class="input-box">
-              <label for="cidade">Cidade: <select name="cidade" id="cidade" >
-                 <option value=""></option>
-              </select>
-            </label></div>
+
+            <div class="input-box">
+                <label for="cidade">Cidade: <select name="cidade" id="cidade">
+                        <option value=""></option>
+                    </select>
+                </label>
+            </div>
 
             <div class="input-box">
                 <label for="uf">UF: </label>
 
-                <select name="uf" id="uf" onchange="pegarCidades(this)" >
+                <select name="uf" id="uf" onchange="pegarCidades(this)">
                     <option value=""></option>
-                    <option 
-                    value="AC">AC</option>
+                    <option value="AC">AC</option>
                     <option value="AL">AL</option>
                     <option value="AP">AP</option>
                     <option value="AM">AM</option>
@@ -114,22 +114,24 @@
                     <textarea name="obs" id="obs" rows="5"></textarea>
                 </div>
 
-                <div class="button"><input id="enviar" type="button" value="Enviar"></div>
+                <div class="button"><input id="enviar" type="button" value="Enviar" onclick="enviar()"></div>
 
                 <spam><img src="logo.png" alt="logo"></spam>
-
-                
-               
-         
 
             </div>
         </div>
 
+    
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    
 
-        
+       <script src="./dados.js"></script>
 
 
-<script src="./cidades.js"></script>
+        <script src="./cidades.js"></script>
+      
+       
 
 </body>
 

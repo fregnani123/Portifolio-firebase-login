@@ -3,8 +3,8 @@
     padding: 0px;
 }
 :root {
-    --cor1: rgba(6, 38, 38);
-    --cor2: rgb(218, 218, 218);
+    --cor1: rgb(7, 41, 41);
+    --cor2: rgb(224, 224, 224);
 }
 body{
     background-color: var(--cor2);
@@ -56,6 +56,10 @@ textarea:focus, input:focus {
 
 textarea:focus, select:focus {
     outline: 0;
+}
+
+label{
+    color: var(--cor1);
 }
 
 /*ajustes: tamanho dos inputs*/
